@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 	
-	@RequestMapping("/courses")
-	public List<User> retrieveAllCourses(){
+	@RequestMapping("/users")
+	public List<User> retrieveAllUsers(){
 		return Arrays.asList(
 				new User(1, "John", "Papachristos"),
 				new User(2, "Georgre", "Papachristos"),
