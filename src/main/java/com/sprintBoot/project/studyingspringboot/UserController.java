@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class CourseController {
+public class UserController {
 	
 	@RequestMapping("/courses")
-	public List<Course> retrieveAllCourses(){
+	public List<User> retrieveAllCourses(){
 		return Arrays.asList(
-				new Course(1, "Learn AWS", "Seminar"),
-				new Course(2, "Learn AWS", "Seminar")
+				new User(1, "Learn AWS", "Seminar"),
+				new User(2, "Learn AWS", "Seminar")
 				);
 				
 	}
